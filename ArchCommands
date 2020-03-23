@@ -1,0 +1,43 @@
+AUR : yay
+
+List all enabled services at startup: systemctl list-unit-files | grep enabled
+Running daemons: ps -e | grep -e d$ -e daemon
+light -S 40
+background terminal process: fg
+sudo /opt/lampp/lampp start
+screenfetch (neofetch)
+disk space: df -h
+Remove all the cached packages that are not currently installed :  sudo pacman -Sc
+remove cache:  sudo paccache -r
+log file errors: journalctl -p 3 -xb
+For recursively removing orphans and their configuration files: sudo pacman -Rns $(pacman -Qtdq)
+
+hardware drivers: lspci -v
+Tex Pdf Command : pdftex '\empty Hello world!\bye' 
+To search for Files : find /home/ichigo/Desktop/Songs -name "*Nevermind*"
+To find folder size: du -sh foldername
+
+Chrome under proxy ->  /usr/bin/google-chrome-stable --http-proxy=xxxx.net:8080 --https-proxy=xxxxx.net:8080 %U
+Run R file -> Rscript a.R
+
+python virtual env -> source env/bin/activate
+nvidia Settings -> optirun -b none nvidia-settings -c :8
+CUDA include -> -I/opt/cuda/include
+badblocks: sudo badblocks -v /dev/sda
+
+To run SandBox Apps: sudo sysctl kernel.unprivileged_userns_clone=1
+            
+start mariaDB: systemctl start mariadb.service
+use mariaDB: mysql -u root -p
+
+Media Safely unmount: udisksctl unmount -b /dev/sdb
+Media Safely Remove: udisksctl power-off -b /dev/sdb
+
+GitHub:
+	new repo : curl -u 'USER' https://api.github.com/user/repos -d '{"name":"REPO"}'
+		touch README.md
+		git init
+		git add README.md
+		git commit -m "first commit"
+		git remote add origin# https://github.com/JmnGeorge/ArchConfigFiles.git
+		git push -u origin master
