@@ -41,3 +41,10 @@ GitHub:
 		git commit -m "first commit"
 		git remote add origin# https://github.com/JmnGeorge/ArchConfigFiles.git
 		git push -u origin master
+
+	Clone and add Changes:
+		git clone https://github.com/JmnGeorge/ArchConfigFiles.git
+		git status
+		git add ArchCommands
+		git commit -m "Editing ArchCommandsFile"
+		git push -u origin master
